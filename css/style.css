@@ -1,8 +1,13 @@
 /* =============================================================================
    Primary styles
-   Author: 
+   Author: SeanJA
    ========================================================================== */
+/* 
 
+Display all of the images as an inline-block grid, will flow onto new lines as
+the number of images grows
+
+*/
 .grid{
 	display:inline-block;
 	margin: 5px;
@@ -10,6 +15,11 @@
 	height: 150px;
 }
 
+/* 
+
+Mask the images that are too large
+
+*/
 .inner-grid{
 	width: 150px;
 	height: 150px;

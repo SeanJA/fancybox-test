@@ -27,6 +27,7 @@
 		<h1>Fancybox Demo</h1>
 	</header>
 	<div id="main" role="main">
+		<!-- spit out the image grid -->
 		<?php include 'image_grid.php'; ?>
 	</div>
 	<footer>
@@ -34,11 +35,14 @@
 	</footer>
 </div> <!--! end of #container -->
 
+<!--include jquery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+<!-- include the fancybox js -->
 <script src="js/libs/jquery.fancybox-1.3.4.js"></script>
 <!-- scripts concatenated and minified via ant build script-->
-<script src="js/plugins.js"></script>
+
+<!-- include script.js -->
 <script src="js/script.js"></script>
 <!-- end scripts-->
 
