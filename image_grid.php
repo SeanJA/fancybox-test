@@ -7,7 +7,7 @@ foreach($images as $i=>$img){
 	//small images all have equivalent images in the big folder, replace /small/ with /big/
 	$big = str_replace('/small/', '/big/', $img);
 	?>
-	<!-- Spit out the grid of images, each with a class of grid and grid-[1-4] so you can style them -->
+	<!-- Spit out the grid of images, each with a class of grid and grid-[0-3] so you can style them -->
 	<div class="grid grid-<?php echo (($i)%4); ?>">
 		<!-- inner grid is display:block which lets you mask the image so that the images are all the same size -->
 		<div class="inner-grid">
