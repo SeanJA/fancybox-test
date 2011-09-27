@@ -14,7 +14,9 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" media="screen" />
+	<link rel="stylesheet" href="css/html5_top.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/html5_bottom.css">
 
 	<script src="js/libs/modernizr-2.0.6.min.js"></script>
 </head>
@@ -25,22 +27,7 @@
 		<h1>Fancybox Demo</h1>
 	</header>
 	<div id="main" role="main">
-		<?php
-		$images = glob('images/small/*.jpg');
-		foreach($images as $i=>$img){
-			$small = $img;
-			$big = str_replace('/small/', '/big/', $img);
-			?>
-			<div class="grid grid-<?php echo (($i)%4); ?>">
-				<div class="inner-grid">
-					<a rel="group1" class="fancybox" href="<?php echo $big; ?>" >
-						<img src="<?php echo $img; ?>" alt="" />
-					</a>
-				</div>
-			</div>
-			<?php
-		}
-		?>
+		<?php include 'image_grid.php'; ?>
 	</div>
 	<footer>
 
